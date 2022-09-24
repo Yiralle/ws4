@@ -1,0 +1,859 @@
+    1  ssh eric@172.31.197.164
+    2  ping 172.31.197.164
+    3  passwd students
+    4  passwd
+    5  cd ~/Desktop
+    6  ssh login@172.31.197.164
+    7  ssh eric@172.31.197.164
+    8  cd ~/Desktop
+    9  ssh login@172.31.197.164
+   10  ping www.github.com
+   11  wget www.github.com
+   12  cd ~/Desktop
+   13  cd ~\Desktop
+   14  cd Desktop
+   15  -bash: cd: ~Desktop: No such file or directory
+   16  ls
+   17  cd ~/Desktop
+   18  ssh eric@172.31.197.164
+   19  cd ~/Desktop
+   20  pwd
+   21  cd ~/Users
+   22  cd /c/Users/Eric Van/Desktop
+   23  cd /c/Users/Eric Van
+   24  cd /c/Users/Eric_Van
+   25  cd ~/Desktop
+   26  echo $HOME
+   27  cd
+   28  ls
+   29  cd ~/Desktop
+   30  ssh eric@172.31.197.164
+   31  cd ~/Desktop
+   32  cd /Desktop
+   33  cd ~/desktop
+   34  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+   35  cd ~/Desktop
+   36  ls
+   37  cd Eric Van/Desktop
+   38  cd \Desktop
+   39  cd ~\Desktop
+   40  cd \Users\Eric Van\Desktop
+   41  cd C:\Users\Eric_Van\Desktop
+   42  cd C:/Users/Eric Van/Desktop
+   43  cd C:Users_Eric_Van/Desktop
+   44  cd C:/Users/Eric_Van/Desktop
+   45  pwd
+   46  cd ~/Desktop
+   47  cd ~\Desktop
+   48  insights-client --register
+   49  ssh eric@172.31.197.164
+   50  ls
+   51  pwd
+   52  cd ~/Desktop
+   53  -a
+   54  ~ cd /
+   55  cd /Desktop
+   56  cd \Desktop
+   57  cd ~\Desktop
+   58  cd c:\Users\Eric_Van\Desktop
+   59  cd ~\Eric Van\Desktop
+   60  cd ~/Desktop
+   61  ls
+   62  gunzip amazon_reviews_us_Books_v1_02.tsv.gz 
+   63  ls -altr amazon_reviews_us_Books_v1_02.tsv 
+   64  head amazon_reviews_us_Books_v1_02.tsv 
+   65  grep verified amazon_reviews_us_Books_v1_02.tsv 
+   66  grep unverified amazon_reviews_us_Books_v1_02.tsv 
+   67  wc -l amazon_reviews_us_Books_v1_02.tsv 
+   68  wc -w amazon_reviews_us_Books_v1_02.tsv 
+   69  grep -wc -l verified amazon_reviews_us_Books_v1_02.tsv 
+   70  grep -wc -l "verified" amazon_reviews_us_Books_v1_02.tsv 
+   71  grep verified amazon_reviews_us_Books_v1_02.tsv 
+   72  wc -l amazon_reviews_us_Books_v1_02.tsv 
+   73  wc -1 amazon_reviews_us_Books_v1_02.tsv | grep verified
+   74  wc --help
+   75  grep -o 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -l
+   76  grep -o 'unverified' amazon_reviews_us_Books_v1_02.tsv | wc -l
+   77  grep -w 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -l
+   78  grep -w 'unverified' amazon_reviews_us_Books_v1_02.tsv | wc -l
+   79  grep -o 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -l > amazon_veri.txt
+   80  less amazon_veri.txt
+   81  ls
+   82  pwd
+   83  mkdir CS131
+   84  ls
+   85  cd ~/CS131
+   86  rm amazon_veri.txt
+   87  pwd
+   88  gunzip amazon_reviews_us_Books_v1_02.tsv
+   89  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+   90  gunzip amazon_reviews_us_Books_v1_02.tsv.gz 
+   91  grep verified amazon_reviews_us_Books_v1_02.tsv 
+   92  grep unverified amazon_reviews_us_Books_v1_02.tsv 
+   93  grep -o 'verified' amazon_reviews_us_Books_v1_02.tsv 
+   94  grep -o 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -l
+   95  grep -o 'unverified' amazon_reviews_us_Books_v1_02.tsv | wc -l
+   96  grep -o 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -l >>counts.txt
+   97  cat counts.txt
+   98  grep -o 'unverified' amazon_reviews_us_Books_v1_02.tsv | wc -l
+   99  grep -o 'unverified' amazon_reviews_us_Books_v1_02.tsv | wc -l >> counts.txt
+  100  cat counts.txt
+  101  vi counts.txt
+  102  cat counts.txt
+  103  grep -o 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -w
+  104  grep -o 'unverified' amazon_reviews_us_Books_v1_02.tsv | wc -w
+  105  grep -c 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  106  grep -c 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -w
+  107  grep -o 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -w
+  108  grep -o -i verified amazon_reviews_us_Books_v1_02.tsv | wc -l
+  109  grep -c -i verified amazon_reviews_us_Books_v1_02.tsv | wc -l
+  110  grep -c verified amazon_reviews_us_Books_v1_02.tsv | wc -l
+  111  grep -c unverified amazon_reviews_us_Books_v1_02.tsv | wc -l
+  112  grep -c -i unverified amazon_reviews_us_Books_v1_02.tsv | wc -l
+  113  grep -o 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  114  grep -o -i unverified amazon_reviews_us_Books_v1_02.tsv | wc -l
+  115  grep -o -i 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -w
+  116  grep -o -i unverified amazon_reviews_us_Books_v1_02.tsv | wc -w
+  117  cat counts.txt
+  118  grep -o -i verified amazon_reviews_us_Books_v1_02.tsv | wc -l
+  119  grep -o -i verified amazon_reviews_us_Books_v1_02.tsv | wc -w
+  120  grep -o -i 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -w
+  121  grep -o 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  122  grep -o verified amazon_reviews_us_Books_v1_02.tsv | wc -l
+  123  grep -o verified amazon_reviews_us_Books_v1_02.tsv | wc -w
+  124  grep -o unverified amazon_reviews_us_Books_v1_02.tsv | wc -l
+  125  grep -o unverified amazon_reviews_us_Books_v1_02.tsv | wc -w
+  126  grep -o 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -w
+  127  grep -o 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  128  grep -c 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  129  grep -c verified amazon_reviews_us_Books_v1_02.tsv | wc -l
+  130  grep -c verified amazon_reviews_us_Books_v1_02.tsv | wc -w
+  131  grep -c 
+  132  grep -c 'verified' amazon_reviews_us_Books_v1_02.tsv 
+  133  grep -c 'unverified' amazon_reviews_us_Books_v1_02.tsv 
+  134  grep -o 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  135  grep -o 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -l > counts.txt
+  136  cat counts.txt
+  137  grep -o 'unverified' amazon_reviews_us_Books_v1_02.tsv | wc -l >> counts.txt
+  138  grep -c 'verified' amazon_reviews_us_Books_v1_02.tsv 
+  139  grep -c 'verified' amazon_reviews_us_Books_v1_02.tsv  >> counts.txt
+  140  grep -c 'unverified' amazon_reviews_us_Books_v1_02.tsv  >> counts.txt
+  141  cat counts.txt
+  142  vi counts.txt
+  143  cat counts.txt
+  144  history
+  145  history > cmds.log
+  146  git init
+  147  git commit -m "First commit"
+  148  git branch -M main
+  149  git remote add origin https://github.com/Yiralle/ws2.git
+  150  git push -u origin main
+  151  git add .
+  152  git push -f origin main
+  153  git remote add origin https://github.com/Yiralle/ws2.git
+  154  git push -u origin main
+  155  git push -u origin master
+  156  git push -f origin master
+  157  git remote remove origin
+  158  git init
+  159  git add .
+  160  testing
+  161  git commit -m "First commit"
+  162  git remote add origin https://github.com/Yiralle/ws2.git
+  163  git remote -v
+  164  git push origin main
+  165  git push -u origin main
+  166  git push -f origin main
+  167  git push -u origin master
+  168  git commit -m "First commit"
+  169  git config --global user.email "eric.van@sjsu.edu"
+  170  git config --global user.name "Eric Van"
+  171  git commit -m "First commit"
+  172  git push -u origin master
+  173  git push -u origin main
+  174  git push -f origin master
+  175  git push -u origin main
+  176  git push -
+  177  git push -u origin main
+  178  pwd
+  179  ls
+  180  rm amazon_reviews_us_Books_v1_02.tsv 
+  181  ls
+  182  git add .
+  183  git commit -m "First commit"
+  184  git push -u origin main
+  185  pwd
+  186  ls
+  187  git remote -v
+  188  git add .
+  189  git commit -m "First commit"
+  190  git init
+  191  git add .
+  192  git commit -m "First commit"
+  193  git branch -M main
+  194  git push -u origin main
+  195  cd ~/home
+  196  cd ~/eric
+  197  cd /
+  198  pwd
+  199  ls
+  200  cd /home
+  201  ls
+  202  cd /home/eric
+  203  ls
+  204  rm amazon_veri.txt
+  205  rm amazon_reviews_us_Books_v1_02.tsv 
+  206  ls
+  207  cd /home/eric/CS131
+  208  ls
+  209  git init
+  210  git commit -m "first commit"
+  211  git branch -M main
+  212  git push -u origin main
+  213  git status
+  214  git reset HEAD ~1
+  215  git reset HEAD ~2
+  216  git rgit status
+  217  git status
+  218  git remote remove origin
+  219  git remote -v
+  220  ls
+  221  git init
+  222  git add .
+  223  git commit -m "First commit"
+  224  git branch -M main
+  225  git remote add origin https://github.com/Yiralle/ws2.git
+  226  git push -u origin main
+  227  git status
+  228  cd ~/CS131
+  229  ls
+  230  git init
+  231  git add .
+  232  git commit -m "First commit"
+  233  git branch -M main
+  234  git remote add origin https://github.com/Yiralle/ws2.git
+  235  git push -u origin main
+  236  git commit --amend
+  237  git rm --cached amazon_reviews_us_Books_v1_02.tsv
+  238  git commit --amend -C HEAD
+  239  git push -u origin main
+  240  git log --oneline
+  241  git rebase -i e96ae41
+  242  git push origin --force --all
+  243  git reset origin/master
+  244  git log --oneline
+  245  git revert HEAD
+  246  pwd
+  247  /ls
+  248  ls
+  249  cd ~/CS131
+  250  ls
+  251  git init
+  252  git status
+  253  git init
+  254  git commit -m "testing commit"
+  255  git remote add origin https://github.com/Yiralle/ws_2.git
+  256  git remote remove origin
+  257  git remote add origin https://github.com/Yiralle/ws_2.git
+  258  git push -u origin main
+  259  git reset --soft HEAD~1
+  260  git -m commit 
+  261  git -m commit "please work"
+  262  git commit -m "please work"
+  263  git push -u origin main
+  264  git log --all -- 'large_file'
+  265  git log
+  266  git log --all --full-history -- "**/large_file"
+  267  git push origin HEAD --force
+  268  git push -origin HEAD --force
+  269  git log
+  270  git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch </CS131>' HEAD
+  271  git log
+  272  git status
+  273  ls
+  274  git checkout --orphan temp_branch
+  275  ls
+  276  rm CS131
+  277  rm -f CS131
+  278  rmdir CS131
+  279  rmdir -f CS131
+  280  history
+  281  rmdir -r CS131
+  282  rm -r CS131
+  283  ls
+  284  pw
+  285  pwd
+  286  rm CS131
+  287  cd ~/CS131
+  288  ls
+  289  pwd
+  290  ls
+  291  pwd
+  292  ls
+  293  wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  294  ls
+  295  gunzip amazon_reviews_us_Books_v1_02.tsv.gz 
+  296  grep -o 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  297  grep -o 'unverified' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  298  grep -c 'verified' amazon_reviews_us_Books_v1_02.tsv 
+  299  grep -c 'unverified' amazon_reviews_us_Books_v1_02.tsv 
+  300  grep -o 'verified' amazon_reviews_us_Books_v1_02.tsv | wc -l > counts.txt
+  301  grep -o 'unverified' amazon_reviews_us_Books_v1_02.tsv | wc -l >> counts.txt
+  302  grep -c 'verified' amazon_reviews_us_Books_v1_02.tsv >> counts.txt
+  303  grep -c 'unverified' amazon_reviews_us_Books_v1_02.tsv >> counts.txt
+  304  cat counts.txt
+  305  vi counts.txt
+  306  cat counts.txt
+  307  history > cmds.log
+  308  ls
+  309  rm amazon_reviews_us_Books_v1_02.tsv 
+  310  ls
+  311  git init
+  312  git commit -m "This is first commit"
+  313  git add .
+  314  git commit -m "This is first commit"
+  315  git log
+  316  git remote add origin https://github.com/Yiralle_ws_2.git
+  317  git push -u origin main
+  318  git push -f origin master
+  319  git push -u origin main
+  320  git remote add origin https://github.com/Yiralle_ws_2.git
+  321  git remote rm origin
+  322  git remote add origin https://github.com/Yiralle/ws_2.git
+  323  git push -u origin main
+  324  git push -f origin master
+  325  pwd
+  326  mkdir ws1
+  327  cd ws1
+  328  pwd
+  329  rm ws1
+  330  rmdir ws1
+  331  rm -d ws1
+  332  rmdir -d ws1
+  333  rm -d ws1
+  334  .
+  335  rm -d ws1
+  336  rm -d /home/eric/ws1
+  337  pw
+  338  pwd
+  339  ls
+  340  mkdir ws2
+  341  cd ws2
+  342  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  343  gunzip amazon_reviews_us_Books_v1_02.tsv.gz 
+  344  cat amazon_reviews_us_Books_v1_02.tsv 
+  345  grep -o '\tY\t'
+  346  grep -o '\tY\t' amazon_reviews_us_Books_v1_02.tsv 
+  347  grep -o '\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  348  grep -o "\tY\t" amazon_reviews_us_Books_v1_02.tsv | wc -l
+  349  grep -c "\tY\t" amazon_reviews_us_Books_v1_02.tsv | wc -l
+  350  grep $"\tY\t" amazon_reviews_us_Books_v1_02.tsv | wc -l
+  351  grep $'\tY\t' amazon_reviews_us_Books_v1_02.tsv
+  352  grep $'\tY\t' amazon_reviews_us_Books_v1_02.tsv | ws -l
+  353  grep $'\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  354  grep $'\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  355  grep $'\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc -w
+  356  grep $'\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -w
+  357  grep $'\tY\t' amazon_reviews_us_Books_v1_02.tsv | ws -l > counts.txt
+  358  grep $'\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -l > counts.txt
+  359  grep $'\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc -l >> counts.txt
+  360  grep $'\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -w > counts.txt
+  361  grep $'\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc -w > counts.txt
+  362  cat counts.txt
+  363  grep $'\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -l > counts.txt
+  364  grep $'\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc -l >> counts.txt
+  365  grep $'\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc -w >> counts.txt
+  366  grep $'\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc -w >> counts.txt
+  367  cat counts.txt
+  368  vi counts.txt
+  369  cat counts.txt
+  370  history > cmds.log
+  371  pwd
+  372  ls
+  373  rm amazon_reviews_us_Books_v1_02.tsv 
+  374  ls
+  375  git init
+  376  git add .
+  377  git commit -m "First commit"
+  378  git branch -M main
+  379  got remote add origin https://github.com/Yiralle/ws2.git
+  380  git remote add origin https://github.com/Yiralle/ws2.git
+  381  git push -u origin main
+  382  pwd
+  383  ls
+  384  cd CS131
+  385  ls
+  386  .
+  387  ..
+  388  cd
+  389  ls
+  390  pwd
+  391  mkdir A1
+  392  cd A1
+  393  ls
+  394  script a1.txt
+  395  cat a1.txt
+  396  vi a1.txt
+  397  cat a1.txt
+  398  pwd
+  399  id -u eric
+  400  id -G eric
+  401  id eric
+  402  groups
+  403  cd
+  404  cd CS131
+  405  ls
+  406  pwd
+  407  cd
+  408  cd A1
+  409  vi a1.txt
+  410  tail /etc/shadow
+  411  vi a1.txt
+  412  ls -latr
+  413  mkdir temp
+  414  ls
+  415  cd temp
+  416  chmod u-x
+  417  chmod u-x temp
+  418  chmod u-x /temp
+  419  chmod u-x /home/eric/A1/temp
+  420  pwd
+  421  ls
+  422  cd
+  423  ls -l
+  424  cd temp
+  425  cd A1
+  426  cd temp
+  427  ls -l
+  428  ls
+  429  cd temp
+  430  vi a1.txt
+  431  mkdir temp2
+  432  mv /home/eric/A1/temp2 /home/eric/A1/temp3
+  433  ls
+  434  cp -R /home/eric/A1/temp3 /home/eric/A1
+  435  cp -R /home/eric/A1/temp3 /home/eric/A1/copytemp3
+  436  ls
+  437  vi a1.txt
+  438  cd
+  439  ls
+  440  pwd
+  441  cd /proc/
+  442  ls
+  443  cd meminfo
+  444  cd /meminfo
+  445  pwd
+  446  cd /home/eric/proc/meminfo
+  447  cat meminfo
+  448  cd
+  449  cd A1
+  450  ls
+  451  vi a1.txt
+  452  cd
+  453  cd /proc/
+  454  ls
+  455  head meminfo
+  456  head cpu
+  457  head cpuinfo
+  458  tail cpuinfo
+  459  cat cpuinfo
+  460  cd
+  461  cd A1
+  462  vi a1.txt
+  463  /home/test/A1/downloaded_hashtags_extend.csv
+  464  sudo /home/test/A1/downloaded_hashtags_extend.csv
+  465  /home/test/A1/downloaded_hashtags_extend.csv
+  466  cp /home/test/A1/downloaded_hashtags_extend.csv /home/eric/A1
+  467  ls
+  468  head downloaded_hashtags_extend.csv 
+  469  du -sh downloaded_hashtags_extend.csv 
+  470  ls -l
+  471  ls -lh
+  472  cat downloaded_hashtags_extend.csv 
+  473  wc -l downloaded_hashtags_extend.csv 
+  474  vi a1.txt
+  475  grep -o -i great downloaded_hashtags_extend.csv | wc -l
+  476  grep -o -i earthfromorbit downloaded_hashtags_extend.csv| wc -l
+  477  grep -o -i earthfromordsbit downloaded_hashtags_extend.csv| wc -l
+  478  vi a1.txt
+  479  grep great downloaded_hashtags_extend.csv 
+  480  echo great | sort | unique
+  481  grep great downloaded_hashtags_extend.csv | uniq
+  482  grep great downloaded_hashtags_extend.csv | uniq | wc -l
+  483  grep great downloaded_hashtags_extend.csv | sort | uniq | wc -l
+  484  grep 'great+' downloaded_hashtags_extend.csv | sort | uniq | wc -l
+  485  grep 'great'+ downloaded_hashtags_extend.csv | sort | uniq | wc -l
+  486  grep great downloaded_hashtags_extend.csv | sort 
+  487  grep great downloaded_hashtags_extend.csv | sort | uniq
+  488  grep great downloaded_hashtags_extend.csv | sort | uniq | wc -l
+  489  grep great downloaded_hashtags_extend.csv | sort | uniq -c
+  490  grep great downloaded_hashtags_extend.csv | sort | uniq | wc -l
+  491  vi a1.txt
+  492  file ascii.txt downloaded_hashtags_extend.csv 
+  493  cat ascii.txt
+  494  file downloaded_hashtags_extend.csv 
+  495  vi a1.txt
+  496  cat a1.txt
+  497  history
+  498  iconv -f utf-8 -t ascii 
+  499  iconv -f utf-8 -t ascii downloaded_hashtags_extend.csv 
+  500  tail downloaded_hashtags_extend.csv 
+  501  vi a1.txt
+  502  grep .+?(?=,) downloaded_hashtags_extend.csv | sort | uniq 
+  503  grep '.+?(?=,)' downloaded_hashtags_extend.csv | sort | uniq 
+  504  grep '.+?(?=,)' downloaded_hashtags_extend.csv | sort | uniq | wc -l
+  505  grep '.+?(?=,)' downloaded_hashtags_extend.csv | uniq | wc -l
+  506  grep '.+?(?=,)' downloaded_hashtags_extend.csv | wc -l
+  507  cat downloaded_hashtags_extend.csv | cut -f 1 | sort | uniq | wc -l
+  508  cat downloaded_hashtags_extend.csv | cut -f 2 | sort | uniq | wc -l
+  509  sort -u -t, -k1,1 downloaded_hashtags_extend.csv | wc -l
+  510  sort -u -t, -k2,1 downloaded_hashtags_extend.csv | wc -l
+  511  sort -u -t, -k1,2 downloaded_hashtags_extend.csv | wc -l
+  512  sort -u -t, -k1,4 downloaded_hashtags_extend.csv | wc -l
+  513  vi a1.txt
+  514  cat a1.txt
+  515  ls
+  516  rm downloaded_hashtags_extend.csv 
+  517  ls
+  518  cat a1.txt
+  519  git init
+  520  git add .
+  521  git commit -m "First commit"
+  522  git branch -M main
+  523  git remote add origin https://github.com/Yiralle/a1.git
+  524  git push -u origin main
+  525  pwd
+  526  cat a1.txt
+  527  ls
+  528  pwd
+  529  cat a1.txt
+  530  pwd
+  531  cat a1.txt
+  532  more a1.txt
+  533  vi a1.txt
+  534  script a1.txt
+  535  a1.txt
+  536  cat a1.txt
+  537  ls
+  538  rm a1.txt
+  539  ls
+  540  script a1.txt
+  541  vi a1.txt
+  542  ls
+  543  pwd
+  544  ls
+  545  cd CS131
+  546  ls
+  547  cd
+  548  ls
+  549  mkdir a1
+  550  ls
+  551  cd a1
+  552  ls
+  553  script a1.txt
+  554  ls
+  555  rm a1.txt
+  556  ls
+  557  cd
+  558  rmdir a1
+  559  ls
+  560  mkdir a1
+  561  ls
+  562  cd a1
+  563  script a1.txt
+  564  vi a1.txt
+  565  /etc/passwd
+  566  id -u eric
+  567  groups
+  568  id -g eric
+  569  pwd
+  570  id -g eric
+  571  group
+  572  id -u eric
+  573  groups
+  574  mkdir temp
+  575  cd temp
+  576  ls
+  577  chmod -x temp
+  578  chmod -x /home/eric/a1/temp
+  579  ls
+  580  ls -l
+  581  touch test.txt
+  582  cd a1
+  583  cd
+  584  mkdir temp2
+  585  mv temp2 temp3
+  586  ls
+  587  rm temp3
+  588  rmdir temp3
+  589  ls
+  590  cd a1
+  591  ls
+  592  mkdir temp2
+  593  mv temp2 temp3
+  594  ls
+  595  cp -R temp3 copytemp3
+  596  ls
+  597  cd
+  598  cd /proc/
+  599  ls
+  600  cat cpuinfo
+  601  cat meminfo
+  602  head cpuinfo
+  603  tail cpuinfo
+  604  cd
+  605  cd a1
+  606  ls
+  607  /home/test/A1/downloaded_hashtags_extend.csv
+  608  cp /home/test/A1/downloaded_hashtags_extend.csv /home/eric/a1
+  609  ls
+  610  stat downloaded_hashtags_extend.csv 
+  611  ls -l downloaded_hashtags_extend.csv 
+  612  ls -sh downloaded_hashtags_extend.csv 
+  613  wc -l downloaded_hashtags_extend.csv 
+  614  grep great downloaded_hashtags_extend.csv | wc -l
+  615  file downloaded_hashtags_extend.csv 
+  616  iconv -f utf-8 -t downloaded_hashtags_extend.csv 
+  617  iconv -f utf-8 -t ascii downloaded_hashtags_extend.csv 
+  618  grep -u -t, -k1,1 downloaded_hashtags_extend.csv 
+  619  sort -u -t, -k1,1 downloaded_hashtags_extend.csv 
+  620  sort -u -t, -k1,1 downloaded_hashtags_extend.csv | wc -l
+  621  sort -u -t, -k1,4 downloaded_hashtags_extend.csv | wc -l
+  622  sort -u -t, -k1,2 downloaded_hashtags_extend.csv | wc -l
+  623  ls
+  624  cd a1
+  625  script a1.txt
+  626  vi a1.txt
+  627  script a1.txt
+  628  vi a1.txt
+  629  ls
+  630  rm downloaded_hashtags_extend.csv 
+  631  ls
+  632  git init
+  633  git add .
+  634  git -m commit "second commit"
+  635  git commit -m "second commit"
+  636  git push -u origin main
+  637  git p -u origin master
+  638  git remote add origin https://github.com/Yiralle/a1.git
+  639  git push -u origin master
+  640  cd a1
+  641  ls
+  642  git init
+  643  git add .
+  644  git commit -m "first commito"
+  645  git branch -M main
+  646  git remote add origin https://github.com/Yiralle/a1.git
+  647  git push -u origin main
+  648  cd
+  649  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  650  cut -f6 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  651  cd ws3
+  652  history > cmds.log
+  653  ls
+  654  cd CS131
+  655  ls
+  656  cd
+  657  ls
+  658  mkdir ws3
+  659  cd ws3
+  660  script ws3.txt
+  661  cd
+  662  wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  663  gunzip amazon_reviews_us_Books_v1_02.tsv.gz 
+  664  cd ws3
+  665  cd
+  666  head amazon_reviews_us_Books_v1_02.tsv 
+  667  cd ws3
+  668  ls
+  669  script ws3.txt
+  670  cd
+  671  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn
+  672  D
+  673  cat ws3.txt
+  674  cd ws3
+  675  head ws3.txt
+  676  cd
+  677  grep 50122160 amazon_reviews_us_Books_v1_02.tsv | wc
+  678  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | 
+  679  cd ws3
+  680  script ws3.txt
+  681  cat ws3.txt
+  682  cd
+  683  head cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c
+  684  head | cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c
+  685  cd ws3
+  686  script ws3.txt
+  687  cd
+  688  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn
+  689  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | wc 
+  690  head -3 cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn
+  691  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  692  D
+  693  C
+  694  xxxxx
+  695  cd ws3.txt
+  696  cd ws3
+  697  head ws3.txt
+  698  tail ws3.txt
+  699  script ws3.txt
+  700  cd
+  701  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  702  head amazon_reviews_us_Books_v1_02.tsv 
+  703  cut -f4 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  704  cut -f5 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  705  cut -f1 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  706  cut -f6 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  707  cd ws3
+  708  cat ws3.txt
+  709  wc ws3.txt
+  710  script ws3.txt
+  711  cat ws3.txt
+  712  cd
+  713  cut -f1 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  714  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  715  cut -f6 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  716  cd ws3
+  717  tail ws3.txt
+  718  head ws3.txt
+  719  vi ws3.txt
+  720  script ws3.txt
+  721  vi ws3.txt
+  722  cat ws3.tsxt
+  723  cat ws3.txt
+  724  vi ws3.txt
+  725  ls
+  726  cat cmds.log
+  727  git init
+  728  git add .
+  729  git commit -m "first commit"
+  730  git branch -M main
+  731  git remote add origin https//github.com/Yiralle/ws3.git
+  732  git push -u origin main
+  733  git remote add origin https://github.com/Yiralle/ws3.git
+  734  git remote rm origin
+  735  git remote add origin https://github.com/Yiralle/ws3.git
+  736  git push -u origin main
+  737  ls -latr
+  738  ls -la | wc
+  739  mkdir CUSTOMERS
+  740  mkdir PRODUCTS
+  741  ls
+  742  cd CUSTOMERS
+  743  cd
+  744  ls
+  745  head 10 amazon_reviews_us_Books_v1_02.tsv 
+  746  cut -f8 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  747  cut -f1 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  748  cd ws4
+  749  ls
+  750  vi ~/.bashrc
+  751  cd
+  752  vi ~/.bashrc
+  753  cd ws4
+  754  ls
+  755  cd
+  756  grep '1206cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | tail -3
+  757  grep '12066297' amazon_reviews_us_Books_v1_02.tsv | head -3
+  758  grep '12066297' amazon_reviews_us_Books_v1_02.tsv | cut -f8 | sa
+  759  grep '12066297' amazon_reviews_us_Books_v1_02.tsv | cut -f8  
+  760  grep '12066297' amazon_reviews_us_Books_v1_02.tsv | cut -f8 | head -3
+  761  grep '12066297' amazon_reviews_us_Books_v1_02.tsv | cut -f8  > /ws4/12066297.txt
+  762  grep '12066297' amazon_reviews_us_Books_v1_02.tsv | cut -f8  > home/eric/ws4/12066297.txt
+  763  pwd
+  764  grep '12066297' amazon_reviews_us_Books_v1_02.tsv | cut -f8  > /home/eric/ws4/12066297.txt
+  765  grep '12066099' amazon_reviews_us_Books_v1_02.tsv | cut -f8  > /home/eric/ws4/12066099.txt
+  766  grep '12065385' amazon_reviews_us_Books_v1_02.tsv | cut -f8  > /home/eric/ws4/12065385.txt
+  767  cd ws4
+  768  ls
+  769  cat 12065385.txt
+  770  cat 12066099.txt
+  771  mv 12065385.txt /home/eric/ws4/CUSTOMERS/
+  772  ls
+  773  mv 12066099.txt /home/eric/ws4/CUSTOMERS/
+  774  mv 12066297.txt /home/eric/ws4/CUSTOMERS/
+  775  ls
+  776  cd CUSTOMERS
+  777  ls
+  778  cd
+  779  cut -f4 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | tail -3
+  780  grep '0000020214' amazon_reviews_us_Books_v1_02.tsv | cut -f8 > /home/eric/ws4/PRODUCTS/0000020214.txt
+  781  grep '0000000868' amazon_reviews_us_Books_v1_02.tsv | cut -f8 > /home/eric/ws4/PRODUCTS/0000000868.txt
+  782  grep '0000000116' amazon_reviews_us_Books_v1_02.tsv | cut -f8 > /home/eric/ws4/PRODUCTS/0000000116.txt
+  783  cd ws4
+  784  ls
+  785  cd PRODUCTS
+  786  ls
+  787  cat 0000000116.txt
+  788  cd
+  789  cd ws4
+  790  vim readme.md
+  791  ls
+  792  rm readme.md
+  793  ls
+  794  cat ws4.txt
+  795  vi ~/.bashrc
+  796  mkdir CUSTOMERS
+  797  mkdir PRODUCTS
+  798  cd
+  799  ls
+  800  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  801  cut -f4 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -3
+  802  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -10
+  803  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -50
+  804  cut -f4 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -50
+  805  grep '51379338' amazon_reviews_us_Books_v1_02.tsv | cut -f8 | sort > /home/eric/ws4/CUSTOMERS/51379338.txt
+  806  cd ws4
+  807  cd CUSTOMERS
+  808  ls
+  809  cat 51379338.txt | tail -10
+  810  cat 51379338.txt | head -10
+  811  cd
+  812  grep '53009736' amazon_reviews_us_Books_v1_02.tsv | cut -f8 | sort > /home/eric/ws4/CUSTOMERS/53009736.txt
+  813  grep '51325095' amazon_reviews_us_Books_v1_02.tsv | cut -f8 | sort > /home/eric/ws4/CUSTOMERS/51325095.txt
+  814  grep '0671025368' amazon_reviews_us_Books_v1_02.tsv | cut -f8 | sort > /home/eric/ws4/PRODUCTS/0671025368.txt
+  815  grep '0812511816' amazon_reviews_us_Books_v1_02.tsv | cut -f8 | sort > /home/eric/ws4/PRODUCTS/0812511816.txt
+  816  grep '0310205719' amazon_reviews_us_Books_v1_02.tsv | cut -f8 | sort > /home/eric/ws4/PRODUCTS/0310205719.txt
+  817  cd ws4
+  818  ls
+  819  cd PRODUCTS
+  820  ls
+  821  cat 0671025368.txt | head -3
+  822  wc -w 0310205719.txt 
+  823  wc -l 0310205719.txt 
+  824  awk '{print $1 }' 0310205719.txt | head -3 
+  825  cd 
+  826  cd ws4
+  827  cd CUSTOMERS
+  828  awk '{total += $1; count++} END { print total/count}' > testingavg.txt
+  829  ls
+  830  rm testingavg.txt 
+  831  awk '{total += $1; count++} END { print total/count}' 51379338.txt > testingavg.txt
+  832  ls
+  833  cat testingavg.txt 
+  834  rm testingavg.txt 
+  835  ls
+  836  awk '{total += $1; count++} END { print total/count}' 51379338.txt >> 51379338.txt
+  837  tail -3 51379338.txt
+  838  awk '{total += $1; count++} END { print total/count}' 53009736.txt >> 53009736.txt
+  839  awk '{total += $1; count++} END { print total/count}' 51325095.txt >> 51325095.txt
+  840  cd
+  841  cd ws4
+  842  cd PRODUCTS
+  843  ls
+  844  awk '{total += $1; count++} END { print total/count}' 0671025368.txt >> 0671025368.txt
+  845  awk '{total += $1; count++} END { print total/count}' 0812511816.txt >> 0812511816.txt
+  846  awk '{total += $1; count++} END { print total/count}' 0310205719.txt >> 0310205719.txt
+  847  cat 0310205719.txt | tail -3
+  848  cat 0671025368.txt | tail -1
+  849  cat 0812511816.txt | tail -l
+  850  cd
+  851  cd ws4
+  852  cd CUSTOMERS
+  853  ls
+  854  cat 51325095.txt | tail -1
+  855  cat 51379338.txt | tail -l
+  856  cat 53009736.txt | tail -1
+  857  cd
+  858  cd ws4
+  859  history > cmds.log
